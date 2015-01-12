@@ -1,0 +1,16 @@
+tile.grass.name=Some weird substance
+
+item.procon_bolt.name=Bolt
+item.procon_screw_base.name=Screw Base
+item.procon_screw_nut.name=Screw Nut
+item.procon_iron_nugget.name=Iron Nugget
+
+container.furnace=Furnace
+
+entity.Villager.name=Villager
+entity.Boat.name=Boat
+
+achievement.snipeSkeleton=Sniper Duel
+achievement.snipeSkeleton.desc=Kill a skeleton with an arrow from more than 50 meters
+
+itemGroup.construct=Project Construct
