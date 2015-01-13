@@ -13,4 +13,6 @@ entity.Boat.name=Boat
 achievement.snipeSkeleton=Sniper Duel
 achievement.snipeSkeleton.desc=Kill a skeleton with an arrow from more than 50 meters
 
-itemGroup.construct=Project Construct
+itemGroup.constructBase=Project Construct
+itemGroup.constructParts=Project Construct Parts
+itemGroup.constructMaterials=Project Construct Materials

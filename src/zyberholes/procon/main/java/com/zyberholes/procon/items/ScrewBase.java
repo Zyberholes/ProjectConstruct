@@ -9,9 +9,9 @@ public class ScrewBase extends Item {
 	
 	public ScrewBase() {
 		setUnlocalizedName(Reference.MODID+"_"+"screw_base");
-		setTextureName(Reference.MODID + ":" + "screw_base");
+		setTextureName(Reference.ASSETS + ":" + "screw_base");
 		
-		setCreativeTab(CustomTabs.conTab);
+		setCreativeTab(CustomTabs.conPartsTab);
 	}
 	
 }

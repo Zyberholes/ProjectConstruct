@@ -15,9 +15,9 @@ public class IronNugget extends Item {
 	public IronNugget() 
 	{
 		setUnlocalizedName(Reference.MODID+"_"+"iron_nugget");
-		setTextureName(Reference.MODID + ":" + "iron_nugget");
+		setTextureName(Reference.ASSETS + ":" + "iron_nugget");
 		
-		setCreativeTab(CustomTabs.conTab);
+		setCreativeTab(CustomTabs.conMatTab);
 	}
 	
 }

@@ -15,9 +15,9 @@ public class Bolt extends Item {
 	public Bolt() 
 	{
 		setUnlocalizedName(Reference.MODID+"_"+"bolt");
-		setTextureName(Reference.MODID + ":" + "bolt");
+		setTextureName(Reference.ASSETS + ":" + "bolt");
 		
-		setCreativeTab(CustomTabs.conTab);
+		setCreativeTab(CustomTabs.conPartsTab);
 	}
 	
 	public ItemStack onItemRightClick(ItemStack itms, World par2World, EntityPlayer par3EntityPlayer)

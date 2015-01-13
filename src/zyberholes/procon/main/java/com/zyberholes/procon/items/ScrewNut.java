@@ -9,9 +9,9 @@ public class ScrewNut extends Item {
 	
 	public ScrewNut() {
 		setUnlocalizedName(Reference.MODID+"_"+"screw_nut");
-		setTextureName(Reference.MODID + ":" + "screw_nut");
+		setTextureName(Reference.ASSETS + ":" + "screw_nut");
 		
-		setCreativeTab(CustomTabs.conTab);
+		setCreativeTab(CustomTabs.conPartsTab);
 	}
 	
 }
