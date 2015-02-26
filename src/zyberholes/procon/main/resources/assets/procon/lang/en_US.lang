@@ -1,9 +1,25 @@
-tile.grass.name=Some weird substance
+tile.procon_ore_chalcopyrite.name=Chalcopyrite Ore
+tile.procon_ore_cassiterite.name=Cassiterite Ore
+tile.procon_ore_argentite.name=Argentite Ore
+tile.procon_ore_wolframite.name=Wolframite Ore
+tile.procon_ore_bauxite.name=Bauxite Ore
+
+tile.procon_machine_generator_idle.name=Generator
+tile.procon_machine_generator_active.name=Generator (Active)
+tile.procon_machine_alloy_furnace_idle.name=Alloy Furnace
+tile.procon_machine_alloy_furnace_active.name=Alloy Furnace (Active)
 
 item.procon_bolt.name=Bolt
 item.procon_screw_base.name=Screw Base
 item.procon_screw_nut.name=Screw Nut
+
 item.procon_iron_nugget.name=Iron Nugget
+
+item.procon_copper_ingot.name=Copper Ingot
+item.procon_tin_ingot.name=Tin Ingot
+item.procon_silver_ingot.name=Silver Ingot
+item.procon_tungsten_ingot.name=Tungsten Ingot
+item.procon_aluminium_ingot.name=Aluminium Ingot
 
 container.furnace=Furnace
 
@@ -14,5 +30,6 @@ achievement.snipeSkeleton=Sniper Duel
 achievement.snipeSkeleton.desc=Kill a skeleton with an arrow from more than 50 meters
 
 itemGroup.constructBase=Project Construct
+itemGroup.constructMachines=Project Construct Machines
 itemGroup.constructParts=Project Construct Parts
 itemGroup.constructMaterials=Project Construct Materials

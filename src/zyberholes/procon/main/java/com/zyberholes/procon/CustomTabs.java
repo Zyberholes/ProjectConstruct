@@ -16,19 +16,27 @@ public class CustomTabs {
 		}
 	};
 	
+	public static CreativeTabs conMachineTab = new CreativeTabs("constructMachines") {
+		@Override
+		@SideOnly(Side.CLIENT)
+		public Item getTabIconItem() {
+			return Item.getItemFromBlock(Blocks.furnace);
+		}
+	};
+	
 	public static CreativeTabs conPartsTab = new CreativeTabs("constructParts") {
 		@Override
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
-			return ProConMod.bolt;
+			return ProConMod.itemBolt;
 		}
 	};
 	
-	public static CreativeTabs conMatTab = new CreativeTabs("constructMaterial") {
+	public static CreativeTabs conMatTab = new CreativeTabs("constructMaterials") {
 		@Override
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
-			return ProConMod.ironNugget;
+			return ProConMod.itemIronNugget;
 		}
 	};
 	

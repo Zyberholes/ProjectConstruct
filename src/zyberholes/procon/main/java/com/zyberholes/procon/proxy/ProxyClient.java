@@ -11,7 +11,7 @@ public class ProxyClient extends ProxyCommon {
 	
 	@Override
 	public void registerRenderers() {
-		RenderingRegistry.registerEntityRenderingHandler(EntityBolt.class, new RenderSnowball(ProConMod.bolt));
+		RenderingRegistry.registerEntityRenderingHandler(EntityBolt.class, new RenderSnowball(ProConMod.itemBolt));
 	}
 	
 }
