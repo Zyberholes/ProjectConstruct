@@ -4,6 +4,7 @@ import com.zyberholes.procon.CustomTabs;
 import com.zyberholes.procon.Reference;
 import com.zyberholes.procon.entities.EntityThrowablePart;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -36,5 +37,6 @@ public class Bolt extends Item {
 		
 		return itms;
 	}
+	
 	
 }

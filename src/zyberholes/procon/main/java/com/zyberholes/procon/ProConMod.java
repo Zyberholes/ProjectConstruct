@@ -8,22 +8,22 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 
-import com.zyberholes.procon.blocks.MachineAlloyFurnace;
-import com.zyberholes.procon.blocks.MachineGenerator;
-import com.zyberholes.procon.blocks.OreMineral;
+//import com.zyberholes.procon.blocks.MachineAlloyFurnace;
+//import com.zyberholes.procon.blocks.MachineGenerator;
+//import com.zyberholes.procon.blocks.OreMineral;
 import com.zyberholes.procon.entities.EntityThrowablePart;
-import com.zyberholes.procon.generation.CustomOreGeneration;
-import com.zyberholes.procon.gui.CustomGuiHandler;
-import com.zyberholes.procon.gui.GuiGenerator;
-import com.zyberholes.procon.items.AluminiumIngot;
+//import com.zyberholes.procon.generation.CustomOreGeneration;
+//import com.zyberholes.procon.gui.CustomGuiHandler;
+//import com.zyberholes.procon.gui.GuiGenerator;
+//import com.zyberholes.procon.items.AluminiumIngot;
 import com.zyberholes.procon.items.Bolt;
-import com.zyberholes.procon.items.CopperIngot;
+//import com.zyberholes.procon.items.CopperIngot;
 import com.zyberholes.procon.items.IronNugget;
 import com.zyberholes.procon.items.ScrewBase;
 import com.zyberholes.procon.items.ScrewNut;
-import com.zyberholes.procon.items.SilverIngot;
-import com.zyberholes.procon.items.TinIngot;
-import com.zyberholes.procon.items.TungstenIngot;
+//import com.zyberholes.procon.items.SilverIngot;
+//import com.zyberholes.procon.items.TinIngot;
+//import com.zyberholes.procon.items.TungstenIngot;
 import com.zyberholes.procon.proxy.ProxyCommon;
 
 import cpw.mods.fml.common.Mod;
@@ -37,7 +37,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = Reference.MODID, name = "Project Construct", version = Reference.VERSION)
+@Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION)
 public class ProConMod
 {
 	//Create mod instance
@@ -65,11 +65,11 @@ public class ProConMod
 	//Machines
 	public static Block machineGeneratorIdle;
 	public static Block machineGeneratorActive;
-	public static Block machineAlloyFurnaceIdle;
-	public static Block machineAlloyFurnaceActive;
+	//public static Block machineAlloyFurnaceIdle;
+	//public static Block machineAlloyFurnaceActive;
 	
 	//Custom Generation:
-	public static CustomOreGeneration customOreGeneration = new CustomOreGeneration();
+	//public static CustomOreGeneration customOreGeneration = new CustomOreGeneration();
 	
 	//Gui IDs:
 	public static final int guiIDGenerator = 0;
@@ -89,22 +89,22 @@ public class ProConMod
 		itemScrewNut = new ScrewNut();
 		itemIronNugget = new IronNugget();
 		
-		itemCopperIngot = new CopperIngot();
-		itemTinIngot = new TinIngot();
-		itemSilverIngot = new SilverIngot();
-		itemTungstenIngot = new TungstenIngot();
-		itemAluminiumIngot = new AluminiumIngot();
+//		itemCopperIngot = new CopperIngot();
+//		itemTinIngot = new TinIngot();
+//		itemSilverIngot = new SilverIngot();
+//		itemTungstenIngot = new TungstenIngot();
+//		itemAluminiumIngot = new AluminiumIngot();
 		
-		oreChalcopyrite = new OreMineral("ore_chalcopyrite");
-		oreCassiterite = new OreMineral("ore_cassiterite");
-		oreArgentite = new OreMineral("ore_argentite");
-		oreWolframite = new OreMineral("ore_wolframite");
-		oreBauxite = new OreMineral("ore_bauxite");
+//		oreChalcopyrite = new OreMineral("ore_chalcopyrite");
+//		oreCassiterite = new OreMineral("ore_cassiterite");
+//		oreArgentite = new OreMineral("ore_argentite");
+//		oreWolframite = new OreMineral("ore_wolframite");
+//		oreBauxite = new OreMineral("ore_bauxite");
 		
-		machineGeneratorIdle = new MachineGenerator("machine_generator_idle", false);
-		machineGeneratorActive = new MachineGenerator("machine_generator_active", true);
-		machineAlloyFurnaceIdle = new MachineAlloyFurnace("machine_alloy_furnace_idle", false);
-		machineAlloyFurnaceActive = new MachineAlloyFurnace("machine_alloy_furnace_active", true);
+//		machineGeneratorIdle = new MachineGenerator("machine_generator_idle", false);
+//		machineGeneratorActive = new MachineGenerator("machine_generator_active", true);
+//		machineAlloyFurnaceIdle = new MachineAlloyFurnace("machine_alloy_furnace_idle", false);
+//		machineAlloyFurnaceActive = new MachineAlloyFurnace("machine_alloy_furnace_active", true);
 		
 		//Register Items:
 		GameRegistry.registerItem(itemBolt, "itemBolt");
@@ -125,19 +125,19 @@ public class ProConMod
 		GameRegistry.registerBlock(oreWolframite, "blockWolframite");
 		GameRegistry.registerBlock(oreBauxite, "blockBauxite");
 		
-		GameRegistry.registerBlock(machineGeneratorIdle, "blockGeneratorIdle");
-		GameRegistry.registerBlock(machineGeneratorActive, "blockGeneratorActive");
-		GameRegistry.registerBlock(machineAlloyFurnaceIdle, "blockAlloyFurnaceIdle");
-		GameRegistry.registerBlock(machineAlloyFurnaceActive, "blockAlloyFurnaceActive");
+//		GameRegistry.registerBlock(machineGeneratorIdle, "blockGeneratorIdle");
+//		GameRegistry.registerBlock(machineGeneratorActive, "blockGeneratorActive");
+//		GameRegistry.registerBlock(machineAlloyFurnaceIdle, "blockAlloyFurnaceIdle");
+//		GameRegistry.registerBlock(machineAlloyFurnaceActive, "blockAlloyFurnaceActive");
 		
 		//Register Generator:
-		GameRegistry.registerWorldGenerator(customOreGeneration, 1);
+//		GameRegistry.registerWorldGenerator(customOreGeneration, 1);
 	}
 	
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
 		//Register Guihandler
-		NetworkRegistry.INSTANCE.registerGuiHandler(this, new CustomGuiHandler());
+//		NetworkRegistry.INSTANCE.registerGuiHandler(this, new CustomGuiHandler());
 		
 		//Entities:
 		EntityRegistry.registerModEntity(EntityThrowablePart.class, "entityBolt", 4, this, 80, 3, true);
