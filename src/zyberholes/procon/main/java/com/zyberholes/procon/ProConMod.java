@@ -11,7 +11,7 @@ import net.minecraftforge.common.MinecraftForge;
 import com.zyberholes.procon.blocks.MachineAlloyFurnace;
 import com.zyberholes.procon.blocks.MachineGenerator;
 import com.zyberholes.procon.blocks.OreMineral;
-import com.zyberholes.procon.entities.EntityBolt;
+import com.zyberholes.procon.entities.EntityThrowablePart;
 import com.zyberholes.procon.generation.CustomOreGeneration;
 import com.zyberholes.procon.gui.CustomGuiHandler;
 import com.zyberholes.procon.gui.GuiGenerator;
@@ -140,7 +140,7 @@ public class ProConMod
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new CustomGuiHandler());
 		
 		//Entities:
-		EntityRegistry.registerModEntity(EntityBolt.class, "entityBolt", 4, this, 80, 3, true);
+		EntityRegistry.registerModEntity(EntityThrowablePart.class, "entityBolt", 4, this, 80, 3, true);
 		proxy.registerRenderers();
 		
 		//Shaped Crafting:

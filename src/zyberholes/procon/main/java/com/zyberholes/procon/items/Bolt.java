@@ -2,7 +2,7 @@ package com.zyberholes.procon.items;
 
 import com.zyberholes.procon.CustomTabs;
 import com.zyberholes.procon.Reference;
-import com.zyberholes.procon.entities.EntityBolt;
+import com.zyberholes.procon.entities.EntityThrowablePart;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -31,7 +31,7 @@ public class Bolt extends Item {
 		
 		if (!par2World.isRemote)
 		{
-			par2World.spawnEntityInWorld(new EntityBolt(par2World, par3EntityPlayer, itms.getItem()));
+			par2World.spawnEntityInWorld(new EntityThrowablePart(par2World, par3EntityPlayer, itms.getItem()));
 		}
 		
 		return itms;

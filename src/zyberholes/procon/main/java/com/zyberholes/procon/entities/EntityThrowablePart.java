@@ -10,25 +10,28 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-public class EntityBolt extends EntityThrowable
+import com.zyberholes.procon.utils.WorldTools; 
+
+
+public class EntityThrowablePart extends EntityThrowable
 {
 	
 	protected Item droppedItem;
 	
-	public EntityBolt(World aWorld) {
+	public EntityThrowablePart(World aWorld) {
 		super(aWorld);
 	}
 	
-	public EntityBolt(World par0, EntityLivingBase par1) {
+	public EntityThrowablePart(World par0, EntityLivingBase par1) {
 		super(par0, par1);
 	}
 	
-	public EntityBolt(World par0, EntityLivingBase par1, Item par2) {
+	public EntityThrowablePart(World par0, EntityLivingBase par1, Item par2) {
 		super(par0, par1);
 		droppedItem = par2;
 	}
 	
-	public EntityBolt(World par0, double par1, double par2, double par3) {
+	public EntityThrowablePart(World par0, double par1, double par2, double par3) {
 		super(par0, par1, par2, par3);
 	}
 	
@@ -46,9 +49,10 @@ public class EntityBolt extends EntityThrowable
 			int x = (int)Math.floor(posX);
 			int z = (int)Math.floor(posZ);
 			
-			Material groundMat = this.worldObj.getTopBlock(x, z).getMaterial();
+			//Material groundMat = this.worldObj.getTopBlock(x, z).getMaterial();
+			Material groundMat = WorldTools.getBlockUnder(this).getMaterial();
 			
-			//kills item if it lands on organic floor:
+			//kills item if it lands ABOVE organic floor:
 			if (groundMat == Material.grass & this.rand.nextInt(3) == 0) {
 				this.worldObj.playSoundAtEntity(this, "step.grass", 0.5F, 1F);
 			}else if (groundMat == Material.ground & this.rand.nextInt(5) == 0) {

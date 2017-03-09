@@ -2,7 +2,7 @@ package com.zyberholes.procon.items;
 
 import com.zyberholes.procon.CustomTabs;
 import com.zyberholes.procon.Reference;
-import com.zyberholes.procon.entities.EntityBolt;
+import com.zyberholes.procon.entities.EntityThrowablePart;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
